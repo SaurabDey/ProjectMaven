@@ -33,8 +33,8 @@ public class NewTest {
 	@BeforeTest
 	public void beforeTest() {
 
-		System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "Resource/geckodriver.exe");
+		driver = new FirefoxDriver();
 
 		driver.get("http://demosite.center/wordpress/wp-login.php?");
 		driver.manage().window().maximize();
