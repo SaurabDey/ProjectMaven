@@ -43,6 +43,7 @@ public class NewTest {
 
 	@AfterTest
 	public void afterTest() {
+		System.out.println("new code");
 		driver.quit();
 
 	}
